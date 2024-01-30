@@ -5,17 +5,13 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/montserrat/500.css";
 import "@fontsource/montserrat/600.css";
 import "@fontsource/montserrat/700.css";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "../router";
 
 export const App = () => {
   return (
-    <main className="flex-auto">
-      <section>
-        <div className="container">
-          <header>
-            <h1>Hello World</h1>
-          </header>
-        </div>
-      </section>
-    </main>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 };
