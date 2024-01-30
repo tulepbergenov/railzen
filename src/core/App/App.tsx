@@ -1,3 +1,5 @@
+import "@/core/styles/index.scss";
+
 export const App = () => {
   return (
     <main>
