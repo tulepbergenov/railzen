@@ -12,6 +12,8 @@ export interface IUListElement extends ComponentProps<"ul"> {}
 
 export interface IHeadingElement extends HTMLAttributes<HTMLHeadingElement> {}
 
+export interface IInputElement extends ComponentProps<"input"> {}
+
 export interface ILayout {
   children: ReactNode;
 }
