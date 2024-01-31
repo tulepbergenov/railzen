@@ -14,13 +14,10 @@ export const ApplyModal = ({
 }: IApplyModal) => {
   const firstSubmitBtnRef = useRef<HTMLButtonElement>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const {
-    register: firstFormRegister,
-    handleSubmit: firstFormHandleSubmit,
-    formState: { issub },
-  } = useForm<IFirstFormSubmitData>({
-    resolver: yupResolver(firstSchema),
-  });
+  const { register: firstFormRegister, handleSubmit: firstFormHandleSubmit } =
+    useForm<IFirstFormSubmitData>({
+      resolver: yupResolver(firstSchema),
+    });
 
   const onSubmitFirstForm = (values: IFirstFormSubmitData) => {
     console.log("onSubmitFirstForm", values);
