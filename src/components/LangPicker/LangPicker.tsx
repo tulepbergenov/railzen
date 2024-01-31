@@ -28,7 +28,27 @@ export const LangPicker = ({
   }, [i18n.language]);
 
   if (isMobile) {
-    return null;
+    return (
+      <ul className={classNames("flex flex-col gap-y-[10px]", className)}>
+        {LANG_ITEMS.map((item) => (
+          <li key={item.locale}>
+            <button
+              className={classNames(
+                "inline-block border-b text-[14px] font-medium uppercase leading-[140%] transition-colors duration-300 ease-in-out",
+                {
+                  ["border-b-[#244563]"]: item.name === currentLang,
+                  ["border-b-transparent"]: item.name !== currentLang,
+                },
+              )}
+              type="button"
+              onClick={() => onSelectLang(item.locale)}
+            >
+              {item.name}
+            </button>
+          </li>
+        ))}
+      </ul>
+    );
   }
 
   return (

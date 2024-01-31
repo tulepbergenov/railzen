@@ -1,19 +1,13 @@
 import { LangPicker } from "@/components";
 import { ArrowSolidRightIcon, UserIcon } from "@/shared/icons";
-import { useApplyModalStore } from "@/shared/stores";
 import classNames from "classnames";
-import { useMemo } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { HEADER_NAV_ITEMS, HEADER_NAV_OTHER_ITEMS } from "../../constants";
+import { useDesktopMenu } from "./DesktopMenu.hook";
 import { IDesktopMenu } from "./DesktopMenu.type";
 
 export const DesktopMenu = ({ className, ...props }: IDesktopMenu) => {
-  const { pathname } = useLocation();
-  const { onOpen } = useApplyModalStore();
-
-  const isWhite = useMemo(() => {
-    return ["/"].includes(pathname);
-  }, [pathname]);
+  const { isWhite, onOpen } = useDesktopMenu();
 
   return (
     <div

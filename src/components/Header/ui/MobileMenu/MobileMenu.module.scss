@@ -1,0 +1,9 @@
+.copyright {
+  @apply text-[88px] leading-[132%];
+}
+
+@media only screen and (max-width: 425px) {
+  .copyright {
+    @apply text-6xl;
+  }
+}

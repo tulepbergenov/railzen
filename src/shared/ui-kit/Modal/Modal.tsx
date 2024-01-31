@@ -15,7 +15,7 @@ export const Modal = ({
       {isOpen && (
         <Dialog
           as={"div"}
-          className="fixed inset-0 z-50 overflow-y-auto px-[16px]"
+          className="fixed inset-0 z-50 overflow-y-auto overflow-x-hidden"
           open={isOpen}
           onClose={onClose}
         >
@@ -23,7 +23,7 @@ export const Modal = ({
             animate={{
               opacity: 1,
             }}
-            className="flex min-h-full w-[calc(100%+32px)] -translate-x-[16px] items-center justify-center bg-black/30 backdrop-blur-[2px]"
+            className="flex min-h-full w-full items-center justify-center bg-black/30 px-[16px] backdrop-blur-[2px]"
             exit={{
               opacity: 0,
             }}

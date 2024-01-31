@@ -8,13 +8,16 @@ import "@fontsource/montserrat/700.css";
 import { Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
 import "../i18n";
+import { MenuProvider } from "../providers";
 import { Router } from "../router";
 
 export const App = () => {
   return (
     <Suspense fallback={null}>
       <BrowserRouter>
-        <Router />
+        <MenuProvider>
+          <Router />
+        </MenuProvider>
       </BrowserRouter>
     </Suspense>
   );
