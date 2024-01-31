@@ -20,7 +20,7 @@ export const FOOTER_OTHER_NAV_ITEMS: {
     name: "FAQ",
   },
   {
-    href: "/comments-and-suggestions",
+    href: "#google-form",
     name: "Отзывы и предложения",
   },
   {

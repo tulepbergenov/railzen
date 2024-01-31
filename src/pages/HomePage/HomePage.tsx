@@ -8,10 +8,10 @@ export const HomePage = () => {
   const { onOpen } = useApplyModalStore();
 
   return (
-    <section>
+    <section className="bg-black">
       <div className="container">
-        <div>
-          <header>
+        <div className="min-h-svh">
+          <header className="pt-[100px]">
             <Link to={"/about"}>About</Link>
             <h1>KTZ Express</h1>
             <button type="button" onClick={onOpen}>

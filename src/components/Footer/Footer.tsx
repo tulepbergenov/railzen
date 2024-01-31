@@ -32,7 +32,7 @@ export const Footer = ({ className, ...props }: IFooter) => {
                   return (
                     <li className="flex" key={item.href}>
                       <Link
-                        className="relative inline-block w-full border-b border-b-white p-[8px] transition-opacity duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-none active:opacity-50 active:before:w-full sm:w-auto sm:border-none sm:p-0 sm:before:content-[''] sm:active:opacity-100 md:hover:before:w-full"
+                        className="relative inline-block w-full border-b border-b-white p-[8px] transition-opacity duration-300 ease-in-out before:absolute before:-bottom-[3px] before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-none active:opacity-50 active:before:w-full sm:w-auto sm:border-none sm:p-0 sm:before:content-[''] sm:active:opacity-100 md:hover:before:w-full"
                         target="_blank"
                         to={item.href}
                       >
@@ -45,7 +45,7 @@ export const Footer = ({ className, ...props }: IFooter) => {
                 return (
                   <li className="flex" key={item.href}>
                     <Link
-                      className="relative inline-block w-full border-b border-b-white p-[8px] transition-opacity duration-300 ease-in-out before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-none active:opacity-50 active:before:w-full sm:w-auto sm:border-none sm:p-0 sm:before:content-[''] sm:active:opacity-100 md:hover:before:w-full"
+                      className="relative inline-block w-full border-b border-b-white p-[8px] transition-opacity duration-300 ease-in-out before:absolute before:-bottom-[3px] before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-none active:opacity-50 active:before:w-full sm:w-auto sm:border-none sm:p-0 sm:before:content-[''] sm:active:opacity-100 md:hover:before:w-full"
                       to={item.href}
                     >
                       {item.name}
@@ -58,7 +58,7 @@ export const Footer = ({ className, ...props }: IFooter) => {
               {FOOTER_OTHER_CONTACT_ITEMS.map((item) => (
                 <li className="flex" key={item.href}>
                   <Link
-                    className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] active:before:w-full md:hover:before:w-full"
+                    className="relative inline-block before:absolute before:-bottom-[3px] before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] active:before:w-full md:hover:before:w-full"
                     to={item.href}
                   >
                     {item.name}
@@ -72,7 +72,7 @@ export const Footer = ({ className, ...props }: IFooter) => {
               <dd className="flex">Телефоны контакт-центра: 1462, 611500</dd>
               <dd className="flex">
                 <Link
-                  className="relative inline-block before:absolute before:bottom-0 before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] active:before:w-full md:hover:before:w-full"
+                  className="relative inline-block before:absolute before:-bottom-[3px] before:left-0 before:h-px before:w-0 before:bg-gradient-to-r before:from-transparent before:to-white before:transition-[width] before:duration-300 before:ease-in-out before:content-[''] active:before:w-full md:hover:before:w-full"
                   to={"mailto:kense@ktze.kz"}
                 >
                   kense@ktze.kz

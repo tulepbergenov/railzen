@@ -5,7 +5,7 @@ export const NotFoundPage = () => {
   useAppTitle("Страница не найдена");
 
   return (
-    <section>
+    <section className="mt-[170px]">
       <div className="container">
         <div>
           <header>
