@@ -8,7 +8,7 @@ i18n
   .use(initReactI18next)
   .use(HttpApi)
   .init({
-    debug: true,
+    debug: import.meta.env.MODE === "development" ? true : false,
     fallbackLng: "ru",
     lng: localStorage.getItem("APP_LANG") || "ru",
   });
