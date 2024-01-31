@@ -1,12 +1,17 @@
+import { ApplyModal } from "@/components";
 import { PageTransitionProvider } from "@/core/providers";
+import { useApplyModalStore } from "@/shared/stores";
 import { Outlet } from "react-router-dom";
 
 export const AppLayout = () => {
+  const { isOpen, onClose } = useApplyModalStore();
+
   return (
-    <main className="flex-auto" id="main">
+    <>
       <PageTransitionProvider>
         <Outlet />
       </PageTransitionProvider>
-    </main>
+      <ApplyModal isOpen={isOpen} onClose={onClose} />
+    </>
   );
 };

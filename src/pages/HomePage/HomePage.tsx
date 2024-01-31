@@ -1,21 +1,22 @@
-import { LangPicker } from "@/components";
 import { useAppTitle } from "@/shared/hooks";
-import { useTranslation } from "react-i18next";
+import { useApplyModalStore } from "@/shared/stores";
 import { Link } from "react-router-dom";
 
 export const HomePage = () => {
-  const { t } = useTranslation();
-
   useAppTitle();
+
+  const { onOpen } = useApplyModalStore();
 
   return (
     <section>
       <div className="container">
         <div>
           <header>
-            <LangPicker />
             <Link to={"/about"}>About</Link>
-            <h1>{t("home")}</h1>
+            <h1>KTZ Express</h1>
+            <button type="button" onClick={onOpen}>
+              Оставить заявку
+            </button>
           </header>
         </div>
       </div>

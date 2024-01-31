@@ -3,13 +3,15 @@ import { motion } from "framer-motion";
 
 export const PageTransitionProvider = ({ children }: ILayout) => {
   return (
-    <motion.div
+    <motion.main
       animate={{
         opacity: 1,
       }}
+      className="flex-auto"
       exit={{
         opacity: 0,
       }}
+      id="main"
       initial={{
         opacity: 0,
       }}
@@ -20,6 +22,6 @@ export const PageTransitionProvider = ({ children }: ILayout) => {
       }}
     >
       {children}
-    </motion.div>
+    </motion.main>
   );
 };
