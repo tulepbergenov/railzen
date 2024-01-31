@@ -77,7 +77,8 @@ export const LangPicker = ({
                             {
                               ["before:w-full"]: active,
                               ["opacity-50"]: !active,
-                              ["opacity-100"]: item.name === currentLang,
+                              ["opacity-[1_!important]"]:
+                                item.name === currentLang,
                             },
                           )}
                           type="button"
