@@ -1,8 +1,3 @@
-export interface IApplyModal {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
 export interface IFirstFormSubmitData {
   lastName: string;
   firstName: string;

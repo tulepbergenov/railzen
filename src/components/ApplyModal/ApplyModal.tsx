@@ -1,4 +1,5 @@
 import { CloseIcon } from "@/shared/icons";
+import { useApplyModalStore } from "@/shared/stores";
 import { Input, Modal } from "@/shared/ui-kit";
 import { Tab } from "@headlessui/react";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,12 +7,10 @@ import classNames from "classnames";
 import { Fragment, useCallback, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { firstSchema } from "./ApplyModal.schema";
-import { IApplyModal, IFirstFormSubmitData } from "./ApplyModal.type";
+import { IFirstFormSubmitData } from "./ApplyModal.type";
 
-export const ApplyModal = ({
-  isOpen = false,
-  onClose = () => {},
-}: IApplyModal) => {
+export const ApplyModal = () => {
+  const { isOpen, onClose } = useApplyModalStore();
   const firstSubmitBtnRef = useRef<HTMLButtonElement>(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const { register: firstFormRegister, handleSubmit: firstFormHandleSubmit } =
