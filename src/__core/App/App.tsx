@@ -1,4 +1,4 @@
-import "@/core/styles/index.scss";
+import "@/__core/styles/index.scss";
 import "@fontsource/montserrat/200.css";
 import "@fontsource/montserrat/300.css";
 import "@fontsource/montserrat/400.css";

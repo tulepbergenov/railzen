@@ -1,5 +1,5 @@
+import { PageTransitionProvider } from "@/__core/providers";
 import { ApplyModal } from "@/components";
-import { PageTransitionProvider } from "@/core/providers";
 import { useApplyModalStore } from "@/shared/stores";
 import { Outlet } from "react-router-dom";
 
