@@ -1,4 +1,4 @@
-import { HomePage, NotFoundPage } from "@/pages";
+import { FaqPage, HomePage, NotFoundPage } from "@/pages";
 import { RouteObject } from "react-router-dom";
 import { AppLayout } from "../layouts";
 
@@ -9,6 +9,10 @@ export const routes: RouteObject[] = [
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/faq",
+        element: <FaqPage />,
       },
       {
         path: "*",
