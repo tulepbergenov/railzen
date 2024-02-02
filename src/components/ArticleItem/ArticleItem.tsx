@@ -20,9 +20,9 @@ export const ArticleItem = ({
             {isLoading ? <Skeleton width={74} /> : formatDate(data.time)}
           </time>
         </p>
-        <div className="h-[170px] overflow-hidden 2xl:h-[230px]">
+        <div className="h-[100px] overflow-hidden sm:h-[170px] 2xl:h-[230px]">
           {isLoading ? (
-            <Skeleton className="h-[170px] 2xl:text-[230px]" />
+            <Skeleton className="h-[100px] sm:h-[170px] 2xl:text-[230px]" />
           ) : (
             <img
               alt={data.title}

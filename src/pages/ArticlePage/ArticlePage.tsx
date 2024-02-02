@@ -14,14 +14,14 @@ export const ArticlePage = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoad(true);
-    }, 2000);
+    }, 1500);
   }, []);
 
   return (
     <>
       <section>
         <div className="container">
-          <div className="pb-[250px] pt-[130px] md:pt-[170px]">
+          <div className="pb-[250px] pt-[130px] lg:pt-[170px]">
             <ul className="flex flex-wrap items-center gap-y-[10px] text-[14px] font-medium uppercase leading-[140%] text-[#AB9475]">
               <li className="flex after:mx-[10px] after:content-['/']">
                 <Link
@@ -75,10 +75,10 @@ export const ArticlePage = () => {
                       width={1345}
                     />
                   ) : (
-                    <Skeleton width="100%" />
+                    <Skeleton className="h-full" width="100%" />
                   )}
                 </div>
-                <div className="mt-[30px] flex flex-col gap-y-[20px] text-[16px] font-normal leading-[140%]">
+                <div className="mt-[20px] flex flex-col gap-y-[20px] text-[16px] font-normal leading-[140%] lg:mt-[30px]">
                   {isLoad ? (
                     <>
                       <p>
@@ -134,7 +134,7 @@ export const ArticlePage = () => {
                       </p>
                     </>
                   ) : (
-                    <Skeleton count={7} />
+                    <Skeleton count={10} />
                   )}
                 </div>
               </div>
