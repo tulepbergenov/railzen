@@ -33,10 +33,10 @@ export const ArticleItem = ({
             />
           )}
         </div>
-        <h2 className="line-clamp-1 text-[20px] font-bold uppercase leading-[23px]">
+        <h2 className="line-clamp-3 text-[14px] font-bold uppercase leading-[19px] sm:line-clamp-1 sm:text-[20px] sm:leading-[23px]">
           {isLoading ? <Skeleton /> : data.title}
         </h2>
-        <p className="line-clamp-5">
+        <p className="line-clamp-5 text-[14px] leading-[19px] sm:text-[16px] sm:leading-[140$px]">
           {isLoading ? <Skeleton count={5} /> : data.description}
         </p>
         <Link
