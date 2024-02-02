@@ -40,7 +40,7 @@ export const ArticlePage = () => {
                     Заголовок новости
                   </Link>
                 ) : (
-                  <Skeleton width={200} />
+                  <Skeleton width={150} />
                 )}
               </li>
             </ul>
