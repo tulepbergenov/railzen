@@ -20,7 +20,7 @@ export const LatestArticles = ({ className, ...props }: ILatestArticles) => {
       <h2 className="text-[20px] font-bold uppercase leading-[23px]">
         Другие новости:
       </h2>
-      <div className="grid grid-cols-2 gap-[30px] lg:flex lg:flex-col">
+      <div className="grid grid-cols-2 gap-x-[16px] gap-y-[20px] sm:gap-x-[20px] lg:flex lg:flex-col lg:gap-y-[30px]">
         <ArticleItem data={mock} isLoading={isLoad} isPreview />
         <ArticleItem data={mock2} isLoading={isLoad} isPreview />
         <ArticleItem data={mock3} isLoading={isLoad} isPreview />
