@@ -20,8 +20,8 @@ export const Footer = ({ className, ...props }: IFooter) => {
       {...props}
     >
       <div className="absolute -left-[480px] top-[30px] h-[595px] w-[595px] rotate-45 sm:-left-[350px] sm:top-2/4 sm:h-[670px] sm:w-[670px] sm:-translate-y-2/4">
-        <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(215deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
-        <div className="absolute right-[115px] top-[115px] h-full w-full bg-[linear-gradient(215deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)] sm:right-[188px] sm:top-[188px]"></div>
+        <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(225deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
+        <div className="absolute right-[115px] top-[115px] h-full w-full bg-[linear-gradient(225deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)] sm:right-[188px] sm:top-[188px]"></div>
       </div>
       <div className="container relative z-10">
         <div className="flex flex-col gap-x-[24px] gap-y-[50px] pb-[116px] pt-[70px] sm:gap-y-[65px] lg:pb-[65px] lg:pt-[60px]">

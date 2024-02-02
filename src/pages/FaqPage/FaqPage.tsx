@@ -11,9 +11,7 @@ export const FaqPage = () => {
         <div className="container relative z-[5]">
           <div className="gap-[20px] pt-[100px] md:grid lg:grid-cols-12 lg:py-[170px]">
             <header className="lg:col-span-9 2xl:col-span-8">
-              <Heading className="text-[32px] font-light uppercase leading-[43px] md:text-[56px] md:leading-[74px] 2xl:text-[80px] 2xl:leading-[120%]">
-                FAQ - часто задаваемые вопросы
-              </Heading>
+              <Heading>FAQ - часто задаваемые вопросы</Heading>
             </header>
             <hr className="my-[20px] border-[#AB9475] lg:col-span-9 lg:my-[50px] 2xl:col-span-8" />
             <div className="gap-x-[24px] gap-y-[5px] md:grid md:grid-cols-2 md:items-start lg:col-span-9 2xl:col-span-8">

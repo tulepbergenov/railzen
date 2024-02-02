@@ -79,8 +79,8 @@ export const MobileMenu = ({ className, ...props }: IMobileMenu) => {
           )}
         >
           <div className="absolute -left-[500px] top-[150px] h-[700px] w-[700px] rotate-45">
-            <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(215deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
-            <div className="absolute right-[170px] top-[170px] h-full w-full bg-[linear-gradient(215deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
+            <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(225deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
+            <div className="absolute right-[170px] top-[170px] h-full w-full bg-[linear-gradient(225deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
           </div>
           <div className="container relative z-[2] h-full">
             <div className="flex h-full flex-col">

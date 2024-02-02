@@ -8,7 +8,7 @@ export const Heading = forwardRef<HTMLHeadingElement, IHeading>(
       Component,
       {
         className: classNames(
-          "2xl:text-[80px] font-light uppercase 2xl:leading-[120%]",
+          "text-[32px] font-light uppercase leading-[43px] md:text-[56px] md:leading-[74px] 2xl:text-[80px] 2xl:leading-[120%]",
           className,
         ),
         ref,

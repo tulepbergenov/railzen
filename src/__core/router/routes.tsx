@@ -1,4 +1,10 @@
-import { FaqPage, HomePage, NotFoundPage } from "@/pages";
+import {
+  ArticlePage,
+  FaqPage,
+  HomePage,
+  NewsPage,
+  NotFoundPage,
+} from "@/pages";
 import { RouteObject } from "react-router-dom";
 import { AppLayout } from "../layouts";
 
@@ -13,6 +19,14 @@ export const routes: RouteObject[] = [
       {
         path: "/faq",
         element: <FaqPage />,
+      },
+      {
+        path: "/news",
+        element: <NewsPage />,
+      },
+      {
+        path: "/news/:articleId",
+        element: <ArticlePage />,
       },
       {
         path: "*",
