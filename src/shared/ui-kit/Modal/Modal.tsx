@@ -23,7 +23,7 @@ export const Modal = ({
             animate={{
               opacity: 1,
             }}
-            className="flex min-h-full w-full items-center justify-center bg-black/30 px-[16px] backdrop-blur-[2px]"
+            className="flex min-h-full w-full items-center justify-center bg-black/30 p-[16px] backdrop-blur-[2px]"
             exit={{
               opacity: 0,
             }}
