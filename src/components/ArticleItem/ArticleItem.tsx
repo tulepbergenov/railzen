@@ -1,17 +1,52 @@
 import { formatDate } from "@/shared/lib";
 import { Heading } from "@/shared/ui-kit";
 import classNames from "classnames";
+import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import { IArticleItem } from "./ArticleItem.type";
 
 export const ArticleItem = ({
   isPreview = false,
+  isLoading = false,
   data,
   className,
   ...props
 }: IArticleItem) => {
   if (isPreview) {
-    return null;
+    return (
+      <article className="group relative flex flex-col gap-y-[20px] border-y border-y-[#AB9475] py-[20px]">
+        <p className="text-[14px] font-medium leading-[170%] text-[#AB9475]">
+          <time>
+            {isLoading ? <Skeleton width={74} /> : formatDate(data.time)}
+          </time>
+        </p>
+        <div className="h-[170px] overflow-hidden 2xl:h-[230px]">
+          {isLoading ? (
+            <Skeleton className="h-[170px] 2xl:text-[230px]" />
+          ) : (
+            <img
+              alt={data.title}
+              className="h-full w-full bg-[#244563] object-cover transition-transform duration-300 ease-in-out active:scale-110 md:group-hover:scale-110"
+              height={260}
+              src={data.cover}
+              width={436}
+            />
+          )}
+        </div>
+        <h2 className="line-clamp-1 text-[20px] font-bold uppercase leading-[23px]">
+          {isLoading ? <Skeleton /> : data.title}
+        </h2>
+        <p className="line-clamp-5">
+          {isLoading ? <Skeleton count={5} /> : data.description}
+        </p>
+        <Link
+          className="absolute inset-0 h-full w-full text-[0] leading-[0]"
+          to={`/news/${data.alias}`}
+        >
+          {data.title}
+        </Link>
+      </article>
+    );
   }
 
   return (
@@ -47,7 +82,7 @@ export const ArticleItem = ({
         <p className="line-clamp-3 lg:line-clamp-2">{data.description}</p>
       </div>
       <Link
-        className="absolute inset-0 inline-block h-full w-full text-[0] leading-none"
+        className="absolute inset-0 inline-block h-full w-full text-[0] leading-[0]"
         to={`/news/${data.alias}`}
       >
         {data.title}

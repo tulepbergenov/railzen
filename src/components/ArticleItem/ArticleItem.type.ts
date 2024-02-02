@@ -3,6 +3,7 @@ import { IDivElement } from "@/shared/types";
 export interface IArticleItem extends IDivElement {
   isPreview?: boolean;
   data: IData;
+  isLoading?: boolean;
 }
 
 interface IData {
