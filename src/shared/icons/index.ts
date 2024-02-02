@@ -8,6 +8,7 @@ export * from "./CloseIcon";
 export * from "./DownloadIcon";
 export * from "./EmailIcon";
 export * from "./HotlineIcon";
+export * from "./KTZEIcon";
 export * from "./KtzeNameIcon";
 export * from "./PhoneIcon";
 export * from "./TriangleIcon";

@@ -1,18 +1,19 @@
+import { KTZEMarquee } from "@/components";
 import { useAppTitle } from "@/shared/hooks";
-import { Accordion } from "@/shared/ui-kit";
+import { Accordion, Heading } from "@/shared/ui-kit";
 
 export const FaqPage = () => {
   useAppTitle("FAQ - часто задаваемые вопросы");
 
   return (
     <>
-      <section className="overflow-hidden">
+      <section className="relative overflow-hidden">
         <div className="container relative z-[5]">
           <div className="gap-[20px] pt-[100px] md:grid lg:grid-cols-12 lg:py-[170px]">
             <header className="lg:col-span-9 2xl:col-span-8">
-              <h1 className="text-[80px] font-light uppercase leading-[120%]">
+              <Heading className="text-[32px] font-light uppercase leading-[43px] md:text-[56px] md:leading-[74px] 2xl:text-[80px] 2xl:leading-[120%]">
                 FAQ - часто задаваемые вопросы
-              </h1>
+              </Heading>
             </header>
             <hr className="my-[20px] border-[#AB9475] lg:col-span-9 lg:my-[50px] 2xl:col-span-8" />
             <div className="gap-x-[24px] gap-y-[5px] md:grid md:grid-cols-2 md:items-start lg:col-span-9 2xl:col-span-8">
@@ -152,8 +153,12 @@ export const FaqPage = () => {
             </div>
           </div>
         </div>
+        <div className="absolute -right-[400px] top-[150px] hidden h-[600px] w-[600px] -rotate-45 lg:block 2xl:-right-[300px] 2xl:h-[820px] 2xl:w-[820px]">
+          <div className="absolute left-0 top-0 h-full w-full bg-[linear-gradient(135deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)]"></div>
+          <div className="absolute left-[150px] top-[150px] h-full w-full bg-[linear-gradient(135deg,#AB9475_0%,#AB9475_0.01%,rgba(171,148,117,0.00)_42.76%)] 2xl:left-[230px] 2xl:top-[230px]"></div>
+        </div>
       </section>
-      <section className="py-[60px] lg:hidden"></section>
+      <KTZEMarquee className="py-[60px] lg:hidden" />
     </>
   );
 };
