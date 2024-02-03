@@ -11,6 +11,7 @@ export * from "./HotlineIcon";
 export * from "./KTZEIcon";
 export * from "./KtzeNameIcon";
 export * from "./PhoneIcon";
+export * from "./RoundedCheckIcon";
 export * from "./TriangleIcon";
 export * from "./UserIcon";
 export * from "./WhatsAppIcon";

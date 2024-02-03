@@ -7,6 +7,7 @@ import {
   HotlinePage,
   NewsPage,
   NotFoundPage,
+  TrackingPage,
   VacanciesPage,
 } from "@/pages";
 import { RouteObject } from "react-router-dom";
@@ -47,6 +48,10 @@ export const routes: RouteObject[] = [
       {
         path: "/about/:employeeId",
         element: <EmployeePage />,
+      },
+      {
+        path: "/tracking",
+        element: <TrackingPage />,
       },
       {
         path: "*",
