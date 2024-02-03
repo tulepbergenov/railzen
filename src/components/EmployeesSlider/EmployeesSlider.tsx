@@ -22,19 +22,24 @@ export const EmployeesSlider = ({
         <div>
           <Heading as="h2">{heading}</Heading>
           <hr className="my-[20px] border-[#244563]" />
-          <div className="relative min-h-[380px] sm:min-h-[576px]">
+          <div className="relative min-h-[400px] sm:min-h-[600px]">
             <div className="absolute left-0 top-0 h-full w-screen">
               <Swiper
+                breakpoints={{
+                  480: {
+                    spaceBetween: "48",
+                  },
+                }}
                 className="pr-[200px_!important]"
                 modules={[Mousewheel]}
                 mousewheel={true}
                 slidesPerView={"auto"}
-                spaceBetween={48}
+                spaceBetween={20}
               >
-                {employees.map((item) => (
+                {employees.map((item, i) => (
                   <SwiperSlide
-                    className="h-full w-[256px] sm:w-[435px_!important]"
-                    key={item.alias}
+                    className="h-full w-[256px_!important] sm:w-[435px_!important]"
+                    key={i}
                   >
                     <article className="group relative flex h-full flex-col gap-y-[16px]">
                       <div className="h-[300px] overflow-hidden bg-slate-200 sm:h-[500px]">
@@ -46,9 +51,7 @@ export const EmployeesSlider = ({
                           width={435}
                         />
                       </div>
-                      <p className="line-clamp-1 font-semibold">
-                        {item.position}
-                      </p>
+                      <p className="font-semibold">{item.position}</p>
                       <h3 className="text-[14px] leading-[140%] text-[#6D6E73]">
                         {item.name}
                       </h3>
