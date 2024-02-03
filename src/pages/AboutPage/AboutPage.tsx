@@ -25,13 +25,13 @@ export const AboutPage = () => {
           width={1920}
         />
         <div className="container relative z-[5]">
-          <div className="flex min-h-svh flex-col justify-end">
+          <div className="flex flex-col justify-end pt-[200px] sm:pt-[170px] md:min-h-svh md:pb-0 md:pt-0">
             <header>
               <Heading>О нас</Heading>
               <hr className="my-[20px] border-white" />
-              <ul className="mb-[50px] grid grid-cols-4 gap-[20px]">
+              <ul className="mb-[50px] grid gap-[20px] md:grid-cols-2 lg:grid-cols-4">
                 <li>
-                  <p className="text-[20px] font-bold uppercase leading-[23px]">
+                  <p className="text-[18px] font-bold uppercase leading-[23px] sm:text-[20px]">
                     Миссия компании
                   </p>
                   <p className="mt-[16px]">
@@ -41,8 +41,11 @@ export const AboutPage = () => {
                     применении новейших технологий.
                   </p>
                 </li>
+                <li className="col-span-full md:hidden">
+                  <hr className="border-white" />
+                </li>
                 <li>
-                  <p className="text-[20px] font-bold uppercase leading-[23px]">
+                  <p className="text-[18px] font-bold uppercase leading-[23px] sm:text-[20px]">
                     Видение
                   </p>
                   <p className="mt-[16px]">
@@ -51,8 +54,11 @@ export const AboutPage = () => {
                     оптимальным ценам.
                   </p>
                 </li>
+                <li className="col-span-full lg:hidden">
+                  <hr className="border-white" />
+                </li>
                 <li>
-                  <p className="text-[20px] font-bold uppercase leading-[23px]">
+                  <p className="text-[18px] font-bold uppercase leading-[23px] sm:text-[20px]">
                     Цели компании
                   </p>
                   <ul className="mt-[16px]">
@@ -63,8 +69,11 @@ export const AboutPage = () => {
                     <li>- Развитие региональной сетиv</li>
                   </ul>
                 </li>
+                <li className="col-span-full md:hidden">
+                  <hr className="border-white" />
+                </li>
                 <li>
-                  <p className="text-[20px] font-bold uppercase leading-[23px]">
+                  <p className="text-[18px] font-bold uppercase leading-[23px] sm:text-[20px]">
                     Репутация
                   </p>
                   <ul className="mt-[16px]">
@@ -78,19 +87,19 @@ export const AboutPage = () => {
         </div>
       </section>
       <EmployeesSlider
-        className="mt-[100px]"
+        className="mt-[60px] sm:mt-[100px]"
         employees={MANAGEMENT_ITEMS}
         heading="Руководство"
       />
       <EmployeesSlider
-        className="mt-[100px]"
+        className="mt-[60px] sm:mt-[100px]"
         employees={BOARD_OF_DIRECTORS}
         heading="Совет директоров"
       />
-      <section className="mt-[190px]">
+      <section className="mt-[60px] md:mt-[190px]">
         <div className="container">
-          <div className="grid grid-cols-2 items-start gap-[20px]">
-            <div className="sticky top-0 pt-[10px]">
+          <div className="grid items-start gap-[20px] lg:grid-cols-2">
+            <div className="pt-[10px] lg:sticky lg:top-0">
               <p className="text-[14px] font-bold uppercase leading-[140%] text-[#AB9475]">
                 Доверие
               </p>
@@ -106,7 +115,7 @@ export const AboutPage = () => {
           </div>
         </div>
       </section>
-      <KTZEMarquee className="mb-[50px] mt-[190px]" />
+      <KTZEMarquee className="mb-[50px] mt-[60px] md:mt-[190px]" />
     </>
   );
 };

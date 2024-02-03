@@ -1,6 +1,7 @@
 import {
   AboutPage,
   ArticlePage,
+  EmployeePage,
   FaqPage,
   HomePage,
   HotlinePage,
@@ -42,6 +43,10 @@ export const routes: RouteObject[] = [
       {
         path: "/about",
         element: <AboutPage />,
+      },
+      {
+        path: "/about/:employeeId",
+        element: <EmployeePage />,
       },
       {
         path: "*",

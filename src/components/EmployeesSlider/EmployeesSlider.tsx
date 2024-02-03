@@ -22,7 +22,7 @@ export const EmployeesSlider = ({
         <div>
           <Heading as="h2">{heading}</Heading>
           <hr className="my-[20px] border-[#244563]" />
-          <div className="relative min-h-[576px]">
+          <div className="relative min-h-[380px] sm:min-h-[576px]">
             <div className="absolute left-0 top-0 h-full w-screen">
               <Swiper
                 className="pr-[200px_!important]"
@@ -33,11 +33,11 @@ export const EmployeesSlider = ({
               >
                 {employees.map((item) => (
                   <SwiperSlide
-                    className="h-full w-[435px_!important]"
+                    className="h-full w-[256px] sm:w-[435px_!important]"
                     key={item.alias}
                   >
                     <article className="group relative flex h-full flex-col gap-y-[16px]">
-                      <div className="h-[500px] overflow-hidden bg-slate-200">
+                      <div className="h-[300px] overflow-hidden bg-slate-200 sm:h-[500px]">
                         <img
                           alt={item.name}
                           className="h-full w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"

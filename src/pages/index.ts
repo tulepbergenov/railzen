@@ -1,5 +1,6 @@
 export * from "./AboutPage";
 export * from "./ArticlePage";
+export * from "./EmployeePage";
 export * from "./FaqPage";
 export * from "./HomePage";
 export * from "./HotlinePage";
