@@ -1,5 +1,7 @@
 export * from "./ApplyModal";
 export * from "./ArticleItem";
+export * from "./DownloadDocumentItem";
+export * from "./EmployeesSlider";
 export * from "./Footer";
 export * from "./Header";
 export * from "./KTZEMarquee";

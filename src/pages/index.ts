@@ -1,3 +1,4 @@
+export * from "./AboutPage";
 export * from "./ArticlePage";
 export * from "./FaqPage";
 export * from "./HomePage";

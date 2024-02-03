@@ -2,12 +2,13 @@ import { useApplyModalStore, useMenuStore } from "@/shared/stores";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { useMemo, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { IS_WHITE_PAGES } from "../../constants";
 
 export const useMobileMenu = () => {
   const { pathname } = useLocation();
 
   const isWhite = useMemo(() => {
-    return ["/"].includes(pathname);
+    return IS_WHITE_PAGES.includes(pathname);
   }, [pathname]);
 
   const { isOpen, onOpen, onClose } = useMenuStore();

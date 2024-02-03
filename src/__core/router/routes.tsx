@@ -1,4 +1,5 @@
 import {
+  AboutPage,
   ArticlePage,
   FaqPage,
   HomePage,
@@ -37,6 +38,10 @@ export const routes: RouteObject[] = [
       {
         path: "/vacancies",
         element: <VacanciesPage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
       },
       {
         path: "*",
