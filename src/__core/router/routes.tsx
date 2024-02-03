@@ -2,6 +2,7 @@ import {
   ArticlePage,
   FaqPage,
   HomePage,
+  HotlinePage,
   NewsPage,
   NotFoundPage,
 } from "@/pages";
@@ -27,6 +28,10 @@ export const routes: RouteObject[] = [
       {
         path: "/news/:articleId",
         element: <ArticlePage />,
+      },
+      {
+        path: "/hotline",
+        element: <HotlinePage />,
       },
       {
         path: "*",
