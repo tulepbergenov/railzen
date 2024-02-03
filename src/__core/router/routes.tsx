@@ -5,6 +5,7 @@ import {
   HotlinePage,
   NewsPage,
   NotFoundPage,
+  VacanciesPage,
 } from "@/pages";
 import { RouteObject } from "react-router-dom";
 import { AppLayout } from "../layouts";
@@ -32,6 +33,10 @@ export const routes: RouteObject[] = [
       {
         path: "/hotline",
         element: <HotlinePage />,
+      },
+      {
+        path: "/vacancies",
+        element: <VacanciesPage />,
       },
       {
         path: "*",

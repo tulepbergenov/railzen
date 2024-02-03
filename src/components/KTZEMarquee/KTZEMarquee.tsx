@@ -9,7 +9,7 @@ export const KTZEMarquee = ({ className, ...props }: IKTZEMarquee) => {
       <Marquee pauseOnHover speed={100}>
         <KTZEIcon
           className={classNames(
-            "mx-[50px] h-[200px] w-auto lg:mx-[174px] lg:h-[422px]",
+            "mx-[50px] h-[200px] w-auto lg:mx-[150px] lg:h-[422px]",
           )}
         />
       </Marquee>
