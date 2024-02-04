@@ -3,11 +3,11 @@ import { Heading } from "@/shared/ui-kit";
 
 export const TrackingPage = () => {
   return (
-    <section className="pt-[120px]">
+    <section className="md:container-none container pt-[120px]">
       <div className="relative border-t border-t-[#B3B3B3]">
-        <div className="container">
-          <div className="min-h-[calc(100svh-120px)]">
-            <div className="grid grid-cols-2 gap-[32px]">
+        <div className="md:container">
+          <div className="xl:min-h-[calc(100svh-120px)]">
+            <div className="grid gap-[32px] xl:grid-cols-2">
               <div className="py-[30px] pb-[35px]">
                 <Heading>Отслеживание груза</Heading>
                 <hr className="my-[20px] border-[#AB9475]" />
@@ -91,7 +91,7 @@ export const TrackingPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-[48px] grid grid-cols-2 gap-[20px] 2xl:grid-cols-3">
+                  <div className="mt-[48px] grid grid-cols-1 gap-[20px] md:grid-cols-3 xl:grid-cols-2 2xl:grid-cols-3">
                     <div className="flex flex-col gap-y-[16px]">
                       <p className="rounded-[140%] text-[14px] text-[#6D6E73]">
                         Текущая дислокация
@@ -134,7 +134,7 @@ export const TrackingPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-0 top-0 h-full w-2/4 bg-[#DFE7F5]">
+        <div className="relative h-[350px] bg-[#DFE7F5] md:h-[660px] xl:absolute xl:right-0 xl:top-0 xl:h-full xl:w-2/4">
           <ul className="absolute left-[24px] top-[24px] flex flex-wrap items-center gap-x-[16px] gap-y-[10px] text-[14px] font-normal leading-[140%] text-[#244563]">
             <li className="flex items-center gap-x-[10px] rounded-[8px] bg-white px-[10px] py-[12px]">
               <span className="inline-block h-[15px] w-[15px] rounded-full bg-[#AB9475]"></span>

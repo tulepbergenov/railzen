@@ -28,4 +28,8 @@
   .rendering-speed {
     text-rendering: optimizeSpeed;
   }
+
+  .container-none {
+    @apply mx-0 max-w-none px-0;
+  }
 }
