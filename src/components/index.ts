@@ -5,6 +5,7 @@ export * from "./EmployeesSlider";
 export * from "./Footer";
 export * from "./Header";
 export * from "./KTZEMarquee";
+export * from "./KZMapAnimation";
 export * from "./LangPicker";
 export * from "./LatestArticles";
 export * from "./SkipLink";
