@@ -1,6 +1,7 @@
 import {
   AboutPage,
   ArticlePage,
+  ContactsPage,
   EmployeePage,
   FaqPage,
   HomePage,
@@ -52,6 +53,10 @@ export const routes: RouteObject[] = [
       {
         path: "/tracking",
         element: <TrackingPage />,
+      },
+      {
+        path: "/contacts",
+        element: <ContactsPage />,
       },
       {
         path: "*",

@@ -1,5 +1,6 @@
 export * from "./ApplyModal";
 export * from "./ArticleItem";
+export * from "./ContactForm";
 export * from "./DownloadDocumentItem";
 export * from "./EmployeesSlider";
 export * from "./Footer";
