@@ -22,6 +22,10 @@
   body::-webkit-scrollbar-track {
     @apply bg-white;
   }
+
+  b {
+    @apply font-semibold;
+  }
 }
 
 @layer utilities {

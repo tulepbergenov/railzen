@@ -2,6 +2,10 @@ import {
   AboutPage,
   ArticlePage,
   ContactsPage,
+  CooperationClientsPage,
+  CooperationInvestorsPage,
+  CooperationPage,
+  CooperationProcurementPage,
   EmployeePage,
   FaqPage,
   HomePage,
@@ -57,6 +61,22 @@ export const routes: RouteObject[] = [
       {
         path: "/contacts",
         element: <ContactsPage />,
+      },
+      {
+        path: "/cooperation",
+        element: <CooperationPage />,
+      },
+      {
+        path: "/cooperation/clients",
+        element: <CooperationClientsPage />,
+      },
+      {
+        path: "/cooperation/investors",
+        element: <CooperationInvestorsPage />,
+      },
+      {
+        path: "/cooperation/procurement",
+        element: <CooperationProcurementPage />,
       },
       {
         path: "*",

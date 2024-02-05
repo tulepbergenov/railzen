@@ -48,7 +48,7 @@ export const ContactForm = ({ isOpen, className, ...props }: IContactForm) => {
           {...props}
         >
           <form
-            className="w-full max-w-[600px] rounded-[8px] bg-white p-[30px] shadow-md"
+            className="w-full max-w-[600px] rounded-[16px] bg-white p-[30px] shadow-md"
             onSubmit={handleSubmit(onSubmit)}
           >
             <fieldset>

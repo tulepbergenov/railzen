@@ -8,7 +8,7 @@ export const AppLayout = () => {
       <SkipLink />
       <Header />
       <PageTransitionProvider>
-        <main className="flex-auto" id="main">
+        <main className="relative flex-auto" id="main">
           <Outlet />
         </main>
       </PageTransitionProvider>

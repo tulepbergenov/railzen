@@ -1,1 +1,1 @@
-export const IS_WHITE_PAGES = ["/", "/about"];
+export const IS_WHITE_PAGES = ["/", "/about", "/cooperation"];
