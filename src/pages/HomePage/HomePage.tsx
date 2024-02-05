@@ -191,12 +191,8 @@ export const HomePage = () => {
       </section>
       <section className="overflow-hidden">
         <div className="container">
-          <div className="relative grid grid-cols-2">
-            <div className="relative -left-[50px] top-2/4 h-[788px] w-full max-w-[1380px] -translate-y-2/4 scale-[0.6] after:absolute after:left-2/4 after:top-2/4 after:h-[763px] after:w-[1134px] after:-translate-x-2/4 after:-translate-y-2/4 after:bg-[url('/imgs/404/kz-map.svg')] after:bg-contain after:bg-center after:bg-no-repeat after:content-[''] 2xl:-left-[100px] 2xl:scale-75 3xl:-left-[100px]">
-              <div className="absolute left-0 top-0 h-full w-full scale-150">
-                <KZMapAnimation />
-              </div>
-            </div>
+          <div className="relative grid grid-cols-2 items-center">
+            <KZMapAnimation className="mr-auto lg:mx-auto lg:scale-50 xl:scale-75 2xl:scale-100" />
             <div className="col-start-2 col-end-3 flex flex-col items-start gap-y-[20px] py-[332px]">
               <Heading
                 as="h2"
