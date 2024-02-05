@@ -1,0 +1,23 @@
+.wrapper {
+  @apply overflow-hidden;
+}
+
+.partners {
+  @apply flex w-full items-center gap-x-[70px];
+
+  animation: marquee 20s linear infinite;
+  animation-delay: -20s;
+}
+
+.partners:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

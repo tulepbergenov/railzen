@@ -1,0 +1,16 @@
+.contacts {
+  animation: pop-in 1.5s none alternate;
+}
+
+@keyframes pop-in {
+  0% {
+    right: -30px;
+
+    opacity: 0;
+  }
+  100% {
+    right: 60px;
+
+    opacity: 1;
+  }
+}
